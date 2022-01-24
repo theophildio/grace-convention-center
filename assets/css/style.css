@@ -27,7 +27,7 @@ h3 {
 
 /* Header CSS */
 
-.navigation span {
+.navigation span, .copyright a {
   color: #1572A1;
 }
 
