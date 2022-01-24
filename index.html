@@ -92,13 +92,14 @@
     </div>
   </header>
   <!-- Header Ends -->
+
   <main class="main-wraper">
     <!-- Toast -->
-    <div class="toast bg-light border-5 border-top-0 border-bottom-0 border-end-0 border-primary position-sticky top-50 start-100 grace-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast bg-light border-5 border-top-0 border-bottom-0 border-end-0 border-primary position-absolute top-100 end-0 grace-toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
         <div class="toast-body">
           <p class="text-dark m-0 fw-bold"><small><span class="me-2"><img class="img-fluid" src="assets/icons/gift-box.svg" width="22" height="23" alt="icon"></span> 15% off on wedding plus booking</small></p>
-       </div>
+      </div>
         <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
     </div>
@@ -150,8 +151,9 @@
       </div>
     </section>
     <!-- Gallery Section Ends -->
+    
     <!-- Package Section Starts -->
-    <section class="container p-lg-5 package-area">
+    <section class="container pt-lg-5 package-area">
       <h3 class="text-capitalize text-center py-lg-5 py-4">our package</h3>
       <!-- Pricing Here -->
       <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4 package-pricing">
@@ -294,7 +296,7 @@
       <h3 class="text-capitalize text-center py-lg-5 py-4">frequently asked questions</h3>
       <div class="row">
         <div class="col-lg-6 order-lg-0 order-1">
-          <div class="faq">
+          <div class="faq-area">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item mb-3">
                 <h2 class="accordion-header" id="headingOne">
@@ -361,8 +363,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 d-lg-flex align-items-lg-center mb-lg-0 mb-4">
-          <div>
+        <div class="col-lg-6 mb-lg-0 mb-4">
+          <div class="faq-area py-lg-5">
             <img src="assets/images/faq.jpg" alt="FAQ" class="img-fluid rounded-3">
           </div>
         </div>
@@ -391,9 +393,15 @@
   </footer>
   <!-- Footer Section Ends -->
 
-  
-  
   <!-- Bootstrap 5 CDN js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- This script makes the toast working -->
+  <script>
+    window.onload = (e) => {
+        let myToast = document.querySelector('.toast');
+        let bsToast = new bootstrap.Toast(myToast);
+        bsToast.show();
+    }
+  </script>
 </body>
 </html>

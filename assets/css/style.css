@@ -68,6 +68,18 @@ h3 {
   color: #9AD0EC;
 }
 
+/* Toast CSS */
+
+.grace-toast {
+  z-index: 9999;
+}
+
+/* Gallery CSS */
+
+.gallery-item {
+  cursor: pointer;
+}
+
 /* Package CSS */
 
 .package-pricing {
@@ -111,18 +123,8 @@ h3 {
   background-color: transparent;
 }
 
-/* Toast CSS */
+/* FAQ CSS */
 
-.toast:not(.showing):not(.show) {
-  opacity: 1;
-}
-
-.grace-toast {
-  z-index: 9999;
-}
-
-/* Gallery CSS */
-
-.gallery-item {
-  cursor: pointer;
+.faq-area {
+  height: 35rem;
 }
