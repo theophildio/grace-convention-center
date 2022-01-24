@@ -1,0 +1,33 @@
+/* Small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) { 
+
+  .grace-carousel img, .carousel-inner .carousel-item {
+    height: 80vh;
+  }
+
+  .grace-carousel .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .package-pricing {
+    margin-top: 0;
+  }
+
+  .wedding-plus {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .grace-carousel .carousel-caption h2 {
+      font-size: 2.5rem;
+    }
+
+    .package-pricing {
+      margin-top: 0;
+    }
+  }

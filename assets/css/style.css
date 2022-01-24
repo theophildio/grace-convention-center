@@ -1,6 +1,7 @@
 
 /* Custom fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@
 /* Common CSS */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h3 {
@@ -69,3 +70,43 @@ h3 {
 
 /* Package CSS */
 
+.package-pricing {
+  margin-top: 6rem;
+}
+
+.package-pricing h4 {
+  font-size: 2.25rem;
+}
+
+.package-pricing h4, h5 {
+  color: #231D4F;
+}
+
+.badge-bg {
+  background-color: #E3BEC6;
+  padding: 0.25rem;
+}
+
+.pricing-btn {
+  background-color: #9AD0EC;
+}
+
+.wedding-plus {
+  background-color: #9AD0EC;
+  border-radius: 1.5rem;
+  color: #FFFFFF;
+}
+
+.wedding-plus .pricing-btn {
+  background-color: #E3BEC6;
+}
+
+.wedding-plus {
+  position: relative;
+  left: 0;
+  bottom: 18%;
+}
+
+.wedding-plus ul li {
+  background-color: transparent;
+}
