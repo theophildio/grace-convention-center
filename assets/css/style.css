@@ -110,3 +110,13 @@ h3 {
 .wedding-plus ul li {
   background-color: transparent;
 }
+
+/* Toast CSS */
+
+.toast:not(.showing):not(.show) {
+  opacity: 1;
+}
+
+.grace-toast {
+  z-index: 9999;
+}
