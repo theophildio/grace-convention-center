@@ -18,6 +18,9 @@
     left: 0;
     bottom: 0;
   }
+  h3 {
+    font-size: 1.25rem;
+  }
  }
 
  /* Medium devices (tablets, less than 992px) */
